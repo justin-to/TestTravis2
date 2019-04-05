@@ -2,3 +2,11 @@ language: java
 jdk:
 - oraclejdk8
 script: ant build
+
+addons:
+    sonarcloud:
+        organization: "justin-to-github"
+        token:
+            secure: SONAR_TOKEN
+script:
+    - sonar-scanner
