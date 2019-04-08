@@ -6,7 +6,7 @@ addons:
     sonarcloud:
         organization: "justin-to-github"
         token:
-            secure: "B2ee64bbf5c3b8cd9b979ee0972f779a462a10ae"
+                secure: "e647c94d8e42c99ea223ed0e6f2c875d2e9287ac"
 script:
     - ant build
     - sonar-scanner
