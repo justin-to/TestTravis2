@@ -7,7 +7,6 @@ addons:
         organization: "justin-to-github"
         token:
             secure: "B2ee64bbf5c3b8cd9b979ee0972f779a462a10ae"
-
 script:
     - ant build
-    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+    - sonar-scanner
